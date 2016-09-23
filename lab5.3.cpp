@@ -44,8 +44,8 @@ int main(){
 		cin.getline(c[i].name.firstName,29);
 		cout<<"Last Name: ";
 		cin.getline(c[i].name.lastName,29);
-	//	cout<<"Contact No.: ";
-	//	cin>>c[i].contNo; 
+		cout<<"Contact No.: ";
+		cin>>c[i].contNo; 
 		cout<<"ORDER DATE: "<<endl;
 		cout<<"Day: ";
 		cin>>c[i].order.day;
