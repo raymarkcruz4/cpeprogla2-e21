@@ -92,7 +92,6 @@ void problem3(){
 	cout<< "Problem #3 Customer Info"<<endl;
 	Customer c[3];
 	for (i=0;i<3;i++){
-	NewLine();
 	cout<<"CUSTOMER INFORMATION "<<i+1<<endl;
 	cout<<"First Name: ";
 	cin.getline(c[i].name.firstName,29);
