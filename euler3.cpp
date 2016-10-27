@@ -17,9 +17,8 @@ int main(){
 		
 	
 	for (i=0; i < num; i++){
-		if (i%3==0 || i%5 ==0)
-		sum += i;
-		
+		if (i%3==0 || i%5==0)
+		sum += i;	
 	}
 	cout << sum<<endl;
 	return 0;
