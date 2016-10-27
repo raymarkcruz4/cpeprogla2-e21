@@ -1,24 +1,26 @@
 #include<iostream>
 #include <fstream>
-#include <math.h>
-
 using namespace std;
 
 int main(){
-    ifstream f("input.txt");
-    
-    int sum=0, num;
-    
-    while (f >> num) {
-    }
-       for (int a=0; a<num; a++){ 
-	   if((a%5==0)||(a%3==0)){
-	   	sum+= a;
-	   }    
-    }
-    cout << sum << endl;
-    //fclose(f);
-    system("pause");
-    return 0;
-}   
-
+	int i, num, sum=0;
+	ifstream f("input.txt");
+	FILE *fp;
+	fp = fopen ("input.txt", "r");
+	
+	if(!fp){
+		cout << "Cannot open file"<<endl;
+		system ("pause");
+		exit(1);
+	}
+	while (f >> num);
+		
+	
+	for (i=0; i < num; i++){
+		if (i%3==0 || i%5 ==0)
+		sum += i;
+		
+	}
+	cout << sum<<endl;
+	return 0;
+}
